@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-    <div class="text-white">Vehicles</div>
+    <div class="text-white">http://swapi.dev/api/vehicles/</div>
   </q-page>
 </template>
 

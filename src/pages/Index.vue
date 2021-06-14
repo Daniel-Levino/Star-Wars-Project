@@ -1,17 +1,23 @@
 <template>
   <q-page padding class="flex flex-center">
+    <div
+      id="welcome-text"
+      class="text-white q-ma-sm"
+      style="text-transform: uppercase"
+    >
+      {{$t('message')}}
+    </div>
     <q-img
       src="~assets/starwarsCapa.svg"
     />
     <div
-      class="row"
+      class="row  q-ma-sm"
       v-for="btn in buttons"
       :key="btn"
     >
       <q-btn
-        padding
-        class="col-10"
-        :label="btn.btnLabel"
+        class="col-12"
+        :label="$t(btn.btnLabel)"
         :to="btn.btnLink"
         style="background-color: #e5b13b"
       />
@@ -33,6 +39,8 @@ export default {
         { btnLabel: 'vehicles', btnLink: '/vehicles' }
       ]
     }
+  },
+  mounted () {
   }
 }
 </script>

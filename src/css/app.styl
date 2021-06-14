@@ -1,1 +1,18 @@
 // app global css in Stylus form
+
+#welcome-text
+    text-shadow: 2px 2px #e5b13b 
+
+.constrain
+    max-width: 740px
+    margin: auto
+
+.card-title
+    text-transform: capitalize
+
+@media screen and (min-width: 740px)
+    #welcome-text
+        font-size: 3em
+@media screen and (max-width: 740px)
+    #welcome-text
+        font-size: 5.5vw
